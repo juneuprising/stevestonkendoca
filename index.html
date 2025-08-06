@@ -1,18 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Steveston Kendo Club</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Steveston Kendo Club</title>
 </head>
 <body>
-    <div class="container">
-        <div class="column left">
-            <img src="assets/logo.svg" alt="Logo" style="max-width: 180px;">
-        </div>
-        <div class="column right">
-            <p>The Steveston Kendo Club is a non-profit martial arts organization based in historic Steveston, British Columbia, Canada. We are a member of the <a href="https://kendo-canada.com">Canadian Kendo Federation</a> and the <a href="https://www.bckf.ca">British Columbia Kendo Federation.</a> The Steveston Kendo Club is among the oldest of its kind and stands with the Vancouver Kendo Club as one of the oldest kendo clubs in all of Canada. <br><br>Our site is under construction. We'll be back soon!</p>
-        </div>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
+    </a>
+    <ul class="nav__menu">
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="beginner.html">Beginner Info</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="bursary.html">Bursary</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" class="btn btn--join">Join Us</a>
+      <a href="contact.html" class="btn btn--outline">Contact</a>
     </div>
+  </nav>
+</header>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero">
+  <div class="container hero__inner">
+    <h1 class="hero__title">Providing Excellency<br>Through Kendo</h1>
+    <div class="hero__buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" class="btn btn--dark">Join us</a>
+      <a href="beginner.html" class="btn btn--light">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<section class="hero-image">
+  <img src="assets/img/Home 1.JPG" alt="Kendo Practice Hall" />
+</section>
+
+<!-- ========== CLUB INTRODUCTION ========== -->
+<section class="info-section light">
+  <div class="container">
+  <div class="info-text">
+    <h2>The Mecca of Kendo<br> in Canada</h2>
+    <p>
+      Founded in 1914 as Yokikan Dojo, the Steveston Kendo Club is one of the first kendo dojos in Canada. It closed in 1939 due to World War II and reopened after the war. Today, it operates at the Steveston Martial Arts Centre and has over 60 active members annually.
+    </p>
+  </div>
+  <div class="info-img">
+    <img src="assets/img/Home 2.png" alt="Historical group photo" />
+  </div>
+  </div>
+</section>
+
+<section class="info-section dark">
+  <div class="container">
+  <div class="info-img">
+    <img src="assets/img/Home 3.jpg" alt="Community photo" />
+  </div>
+  <div class="info-text white">
+    <h2>Kendo from many<br> walks of life</h2>
+    <p>
+      Steveston Kendo Club welcomes kendoka of all ages, from as young as 8 to over 60. While many members are from Richmond, others travel from across the Lower Mainland to train. Kendo offers a unique physical activity that helps develop discipline, confidence, and spirit.
+    </p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== PRACTICE SCHEDULE ========== -->
+<section class="schedule">
+  <h2 class="schedule__title">Practice Schedule</h2>
+  <div class="schedule__days">
+    <div class="schedule__day">
+      <div class="schedule__day-title">Monday</div>
+      <div class="schedule__time">7:30–9:30pm</div>
+    </div>
+    <div class="schedule__day">
+      <div class="schedule__day-title">Wednesday</div>
+      <div class="schedule__time">7:30–9:30pm</div>
+    </div>
+    <div class="schedule__day">
+      <div class="schedule__day-title">Friday</div>
+      <div class="schedule__time">7:30–9:30pm</div>
+    </div>
+  </div>
+  <p class="schedule__note">
+    All classes held at the Steveston Martial Arts Centre.<br /> This schedule is for bogu members only.
+  </p>
+</section>
+
+<!-- ========== BEGINNER INFO ========== -->
+<section class="beginner-section dark">
+  <div class="container beginner-inner">
+    <div class="beginner-text">
+      <h2>Beginners Course</h2>
+      <p>
+        Our introductory summer kendo course welcomes beginners, helping them build a strong foundation in both the physical and philosophical aspects of the art. It's also a great short-term experience to see if kendo is right for you.
+      </p>
+      <div class="beginner-buttons">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" class="btn btn--light-inverse large">Join Now!</a>
+          <a href="beginner.html" class="btn btn--outline-white large">Learn More</a>
+      </div>
+    </div>
+    <div class="beginner-img">
+      <img src="assets/img/Home 4.jpg" alt="Beginner class practice">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container footer__content">
+    <div class="footer__links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">New Member Information</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <ul>
+        <li><a href="history.html">History</a></li>
+        <li><a href="members.html">Member Page</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="bursary.html">Bursary Page</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://www.instagram.com/stevestonkendoclub/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/stevestonkendo.club.1/">Facebook</a></li>
+        <li><a href="info@stevestonkendo.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© Steveston Kendo Club. All rights reserved.</p>
+  </div>
+</footer>
+
+
 </body>
 </html>

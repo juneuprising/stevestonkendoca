@@ -1,0 +1,883 @@
+/* ========== BASE ========== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: white;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+.header {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.nav__logo img {
+  height: 70px;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 400;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.nav__menu a:hover {
+  color: #006a6a;
+}
+
+.nav__cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.btn--join {
+  background-color: #6474a4;
+  color: white;
+  border: none;
+}
+
+.btn--outline {
+  border: 1px solid #222;
+  color: #222;
+  background: transparent;
+}
+
+/* ========== HERO ========== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero h1,
+.hero__title {
+  font-size: 5rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero__buttons {
+  margin-top: 1rem;
+}
+
+.hero__buttons a {
+  padding: 0.75rem 2.5rem;     
+  border-radius: 16px;         
+  min-width: 180px;            
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.btn--dark {
+  background: #111;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.btn--light {
+  border: 1px solid #111;
+  color: #111;
+}
+
+/* ========== HERO IMAGE ========== */
+.hero-image img {
+  width: 100%;
+  display: block;
+}
+
+.hero__inner {
+  text-align: left;
+}
+
+/* ========== INFO SECTION ========== */
+.info-section {
+  padding: 3rem 2rem;
+}
+
+.info-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.info-section.light {
+  background: #f5f5f5;
+}
+
+.info-section.dark {
+  background: #1a1a1a;
+  color: white;
+}
+
+.info-section .info-text h2 {
+  font-family: 'Playfair Display', serif; /* or 'Lato', sans-serif */
+  font-size: 2.5rem;                         /* Adjust as needed */
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.info-section .info-text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;       /* Slightly larger than base */
+  line-height: 1.6;
+}
+
+.info-section .info-text {
+  flex: 1 1 45%;
+}
+
+.info-section .info-img {
+  flex: 1 1 45%;
+}
+
+.info-section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.info-text.white h2,
+.info-text.white p {
+  color: white;
+}
+
+/* ========== SCHEDULE ========== */
+.schedule {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.schedule__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.schedule__days {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.schedule__day {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+.schedule__time {
+  margin-bottom: 1rem;
+}
+
+.schedule__day-title {
+  font-weight: 700;
+}
+
+.schedule__note {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ========== BEGINNER ========== */
+.beginner-section.dark {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 4rem 0;
+}
+
+.beginner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.beginner-text {
+  flex: 1;
+  font-family: 'Lato', sans-serif;
+}
+
+.beginner-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.beginner-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.beginner-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.beginner-buttons .btn.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+}
+
+.beginner-img {
+  flex: 1;
+}
+
+.beginner-img img {
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+/* Join Now! – White background with dark text */
+.btn--light-inverse {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: none;
+}
+
+/* Learn More – Transparent with white border and white text */
+.btn--outline-white {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Common styles for larger buttons */
+.btn.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effects */
+.btn--light-inverse:hover {
+  background-color: #e6e6e6;
+}
+
+.btn--outline-white:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+
+
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #fff;
+  padding: 3rem 2rem;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .info-section,
+  .beginner {
+    flex-direction: column;
+  }
+
+  .schedule__days {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__cta {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
+/* ========== BEGINNER ========== */
+.beginner-hero {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.beginner-hero__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.beginner-hero__image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.beginner-hero__image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn--center {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn--white {
+  background: white;
+  color: #111;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.btn--white:hover {
+  background: #f5f5f5;
+}
+
+/* ========== BEGINNER TEXT ========== */
+.beginner-intro-text {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color:  white;
+  font-family: 'Playfair Display', serif;
+}
+
+.beginner-intro-text p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+}
+
+
+/* ========== BEGINNER EXPECT ========== */
+.expect-section {
+  background: #1a1a1a;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.expect__container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.expect__image {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+.expect__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.expect__text {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+}
+
+.expect__text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.expect__text h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.expect__text ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.expect__text ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* ========== EQUIPMENT SECTION ========== */
+.equipment-section {
+  background: white;
+  color: #1a1a1a;
+  padding: 3rem 2rem;
+}
+
+.equipment__container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.equipment__image {
+  flex: 1 1 50%;
+}
+
+.equipment__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.equipment__text {
+  flex: 1 1 50%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  padding: 2rem 1rem;
+}
+
+.equipment__text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.equipment__text h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.equipment__text p {
+  margin: 0.6rem 0;
+}
+
+
+/* ========== FAQ CTA SECTION ========== */
+.faq-cta-section {
+  background-color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.faq-cta__container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.faq-cta__container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.button-dark {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.button-dark:hover {
+  background-color: #333;
+}
+
+
+/* ========== FAQ  ========== */
+.faq-section {
+  padding: 3rem 2rem;
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-title {
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #222;
+  width: 50%;
+  align-items: center;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #222;
+  color: white;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  content: '\25BC';
+  transition: transform 0.3s;
+}
+
+.faq-item.open .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem 1.5rem;
+  background: #333;
+  color: #eee;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+/* Optional: rotate arrow */
+.faq-question .arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .arrow {
+  transform: rotate(180deg);
+}
+
+.faq-contact {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.faq-contact .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: #222;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+/* ========== BURSARY ========== */
+.bursary__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bursary__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.bursary__text {
+  flex: 1 1 450px;
+  max-width: 600px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.bursary__text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.bursary__text h3 span {
+  display: block;
+}
+
+.bursary__image {
+  flex: 1 1 650px;
+  max-width: 600px;
+}
+
+.bursary__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  display: block;
+}
+
+/* ========== BURSARY REQUIREMENTS ========== */
+.bursary__requirements {
+  background-color: #1e1e1e;
+  padding: 4rem 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.bursary__requirements .section__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.requirements__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.requirement__item {
+  border: 1px solid #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  max-width: 280px;
+  flex: 1 1 200px;
+}
+
+.requirements__cta {
+  margin-top: 3rem;
+}
+
+.btn__cta {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn__cta:hover {
+  background-color: #e0e0e0;
+}
+
+/* ========== CONTACT ========== */
+.contact {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.contact__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.btn__submit {
+  margin: 1rem auto 0;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn__submit:hover {
+  background-color: #e0e0e0;
+}
+
