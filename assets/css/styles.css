@@ -38,7 +38,7 @@ body {
 }
 
 .nav__logo img {
-  height: 70px;
+  height: 40px;
 }
 
 .nav__menu {
@@ -57,7 +57,8 @@ body {
 }
 
 .nav__menu a:hover {
-  color: #006a6a;
+  text-decoration: underline;
+  color: inherit; /* Keeps same color*/
 }
 
 .nav__cta {
@@ -67,15 +68,63 @@ body {
 
 .btn {
   padding: 0.6rem 1.2rem;
-  border-radius: 5px;
+  border-radius: 15px;
   font-weight: 500;
   text-decoration: none;
   font-size: 1rem;
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
+.btn--primary {
+  background-color: #222;
+  color: white;
+  border: none;
+}
+
+.btn--primary:hover {
+  background-color: white;
+  border: 1px solid #222;
+  color: #222;
+}
+
+.btn--secondary {
+  background: transparent;
+  border: 1px solid #222;
+  color: #222;
+}
+
+.btn--secondary:hover {
+  background-color: #222;
+  color: white;
+}
+
+.btn--primary-inverse {
+  background-color: white;
+  color: #222;
+  border: 1px solid #222;
+}
+
+.btn--primary-inverse:hover {
+  background-color: #222;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn--secondary-inverse {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn--secondary-inverse:hover {
+  background-color: white;
+  color: #222;
+}
+
+
 .btn--join {
-  background-color: #6474a4;
+  background-color: #222;
   color: white;
   border: none;
 }
@@ -84,6 +133,14 @@ body {
   border: 1px solid #222;
   color: #222;
   background: transparent;
+}
+
+.hero__buttons,
+.beginner-buttons,
+.nav__cta {
+  display: flex;
+  gap: 1.5rem; /* Adjust value as needed (1.5rem = ~24px) */
+  flex-wrap: wrap; /* Optional: wrap on smaller screens */
 }
 
 /* ========== HERO ========== */
@@ -102,7 +159,7 @@ body {
 .hero h1,
 .hero__title {
   font-size: 5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
   text-align: left;
   font-weight: 400;
@@ -168,7 +225,6 @@ body {
   font-size: 2.5rem;                         /* Adjust as needed */
   font-weight: 400;
   margin-bottom: 1rem;
-  line-height: 1.2;
 }
 
 .info-section .info-text p {
@@ -187,7 +243,7 @@ body {
 
 .info-section img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .info-text.white h2,
@@ -229,7 +285,7 @@ body {
 }
 
 .schedule__day-title {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .schedule__note {
@@ -264,7 +320,6 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  line-height: 1.2;
 }
 
 .beginner-text p {
@@ -290,7 +345,7 @@ body {
 
 .beginner-img img {
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 15px;
   object-fit: cover;
 }
 
@@ -386,30 +441,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
-  .info-section,
-  .beginner {
-    flex-direction: column;
-  }
-
-  .schedule__days {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .nav__menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav__cta {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-}
-
 /* ========== BEGINNER ========== */
 .beginner-hero {
   text-align: center;
@@ -441,23 +472,21 @@ body {
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1.5rem;        /* Larger text */
+  min-width: 180px;          /* Optional: makes the button wider */
+  border-radius: 15px;
 }
 
 .btn--white {
-  background: white;
-  color: #111;
-  border: none;
-  padding: 0.75rem 2rem;
-  font-size: 1.25rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: all 0.2s ease;
+  background-color: white;
+  color: #222;
+  border: 1px solid #222;
 }
 
 .btn--white:hover {
-  background: #f5f5f5;
+  background-color: #222;
+  color: white;
+  border: 1px solid white;
 }
 
 /* ========== BEGINNER TEXT ========== */
@@ -496,13 +525,16 @@ body {
 .expect__image {
   flex: 1 1 50%;
   max-width: 50%;
+  border-radius: 15px;
 }
 .expect__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 15px;
 }
+
 
 .expect__text {
   flex: 1 1 50%;
@@ -517,7 +549,6 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1.2rem;
   font-weight: 400;
-  line-height: 1.2;
 }
 
 .expect__text h3 {
@@ -561,6 +592,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 15px;
 }
 
 .equipment__text {
@@ -575,7 +607,6 @@ body {
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 1.2rem;
-  line-height: 1.2;
 }
 
 .equipment__text h3 {
@@ -601,7 +632,6 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 400;
-  line-height: 1.2;
 }
 
 .faq-cta__container p {
@@ -622,7 +652,9 @@ body {
 }
 
 .button-dark:hover {
-  background-color: #333;
+  background-color: white;
+  border: 1px solid #222;
+  color: #222;
 }
 
 
@@ -764,7 +796,20 @@ body {
 .bursary__image img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 15px;
+  display: block;
+}
+
+.history__image {
+  flex: 1 1 650px;
+  max-width: 300px;
+  margin-top: 1.5rem;
+}
+
+.history__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
   display: block;
 }
 
@@ -880,4 +925,293 @@ body {
 .btn__submit:hover {
   background-color: #e0e0e0;
 }
+
+
+/* ========== RESPONSIVE UPDATES ========== */
+
+/* Small screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .hero h1,
+  .hero__title,
+  .faq-title,
+  .bursary__title,
+  .contact__title {
+    font-size: 2.5rem;
+  }
+
+  .nav__menu,
+  .hero__buttons,
+  .beginner-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .btn,
+  .btn.large,
+  .btn--center {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    min-width: auto;
+  }
+
+  .expect__container,
+  .equipment__container,
+  .bursary__wrapper {
+    flex-direction: column;
+  }
+
+  .faq-item {
+    width: 100%;
+  }
+
+  .beginner-hero__title {
+    font-size: 2.5rem;
+  }
+
+  .bursary__image,
+  .history__image {
+    max-width: 100%;
+  }
+
+  .beginner-img,
+  .equipment__image {
+    order: -1; /* Images appear above text */
+  }
+}
+
+/* Medium screens (577px to 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .hero h1,
+  .hero__title,
+  .faq-title,
+  .bursary__title,
+  .contact__title {
+    font-size: 3.5rem;
+  }
+
+  .hero__buttons a,
+  .btn.large {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .beginner-hero__title {
+    font-size: 3rem;
+  }
+
+  .faq-item {
+    width: 80%;
+  }
+
+  .expect__container,
+  .equipment__container,
+  .bursary__wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* Large screens (992px and up) */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .faq-item {
+    width: 60%;
+  }
+
+  .btn--center {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .nav__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .nav__menu li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .nav__cta {
+    display: none; /* Hide Join Us / Contact buttons in header */
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .beginner-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .beginner-img {
+    order: -1; /* Moves the image to the top */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .beginner-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .beginner-text {
+    padding: 0 1rem;
+  }
+
+  .beginner-text .hero__buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .schedule__title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .schedule__day-title {
+    font-size: 1.2rem;
+  }
+
+  .schedule__time,
+  .schedule__location {
+    font-size: 1rem;
+  }
+
+  .schedule__location {
+    line-height: 1.4;
+  }
+
+  .schedule__note {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .schedule__days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .schedule__day {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+}
+
+/* ========== BEGINNER INFO RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+
+  /* Hero Section */
+  .beginner-hero__title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .beginner-hero__image-wrapper img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .btn--center {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    min-width: auto;
+  }
+
+  /* Intro Text */
+  .beginner-intro-text p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+  
+
+  /* Expect Section */
+
+  .expect__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .expect__text {
+    text-align: left;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .expect__text h2,
+  .expect__text p,
+  .expect__text ul {
+    text-align: left;
+  }
+
+  .expect__image  {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .expect__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  /* Equipment Section */
+  .equipment__container {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .equipment__text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .equipment__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* FAQ CTA */
+  .faq-cta__container h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-cta__container p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .faq-cta__container a {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+
+
 
