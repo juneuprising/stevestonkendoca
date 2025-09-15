@@ -8,12 +8,12 @@ class Carousel {
     this.carouselData = [
       { name: "Neal Nakano", rank: "4 Dan", img: "assets/img/Nakano Sensei.jpg" },
       { name: "Bill Chung", rank: "4 Dan", img: "assets/img/No Photo Available.png" },
-      { name: "Terry Kondo", rank: "6 Dan", img: "assets/img/Kondo Sensei.jpg" },
-      { name: "Ray Murao", rank: "7 Dan", img: "assets/img/Murao Sensei.jpg" },
+      { name: "Terry Kondo", rank: "6 Dan", img: "assets/img/Kondo Sensei.png" },
+      { name: "Ray Murao", rank: "7 Dan", img: "assets/img/Murao Sensei.png" },
       { name: "Philip Nishikihama", rank: "5 Dan", img: "assets/img/No Photo Available.png" },
-      { name: "Wendy Robillard", rank: "5 Dan", img: "assets/img/Robillard Sensei.jpg" },
-      { name: "G. Ohara", rank: "5 Dan", img: "assets/img/Ohara Sensei.jpg" },
-      { name: "K. Iwai", rank: "5 Dan", img: "assets/img/Iwai Sensei.jpg" }
+      { name: "Wendy Robillard", rank: "5 Dan", img: "assets/img/Robillard Sensei.png" },
+      { name: "G. Ohara", rank: "5 Dan", img: "assets/img/Ohara Sensei.png" },
+      { name: "K. Iwai", rank: "5 Dan", img: "assets/img/Iwai Sensei.png" }
     ];
 
     this.carouselInView = [1, 2, 3, 4, 5];
