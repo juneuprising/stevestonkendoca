@@ -1688,6 +1688,19 @@ body.nav-open {
   }
 }
 
+/* ========== FEATHER ICONS STYLING ========== */
+.footer__links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__links i[data-feather] {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 
 
 
