@@ -242,8 +242,8 @@ body.nav-open {
 }
 
 .btn--primary:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
 }
 
 .btn--secondary {
@@ -253,8 +253,8 @@ body.nav-open {
 }
 
 .btn--secondary:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-light-gray);
+  color: var(--color-primary);
 }
 
 .btn--primary-inverse {
@@ -375,8 +375,18 @@ body.nav-open {
   margin-right: var(--spacing-sm);
 }
 
+.btn--dark:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
 .btn--light {
   border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--light:hover {
+  background-color: var(--color-light-gray);
   color: var(--color-primary);
 }
 
@@ -646,15 +656,18 @@ body.nav-open {
 
 .beginner-hero__image-wrapper {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 100%;
   max-width: 100%;
+  contain: layout;
 }
 
 .beginner-hero__image-wrapper img {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .btn--center {
@@ -665,6 +678,12 @@ body.nav-open {
   font-size: 1.5rem;        /* Larger text */
   min-width: 180px;          /* Optional: makes the button wider */
   border-radius: 15px;
+  z-index: 10;
+  will-change: transform;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--color-primary);
 }
 
 .btn--white {
@@ -676,7 +695,7 @@ body.nav-open {
 .btn--white:hover {
   background-color: #222;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #222;
 }
 
 /* ========== BEGINNER TEXT ========== */
@@ -776,49 +795,31 @@ body.nav-open {
   }
 }
 
-.equipment__container {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+.equipment-section .container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.equipment__image {
-  flex: 1 1 50%;
-}
-
-.equipment__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 15px;
-}
-
-.equipment__text {
-  flex: 1 1 50%;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1rem;
-  padding: 2rem 1rem;
-}
-
-.equipment__text h2 {
+.equipment-section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 1.2rem;
+  text-align: left;
 }
 
-.equipment__text h3 {
+.equipment-section h3 {
   font-size: 1.5rem;
   margin-top: 2rem;
   font-weight: 600;
+  font-family: 'Lato', sans-serif;
 }
 
-.equipment__text p {
+.equipment-section p {
   margin: 0.6rem 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 
@@ -860,9 +861,8 @@ body.nav-open {
 }
 
 .button-dark:hover {
-  background-color: white;
-  border: 1px solid #222;
-  color: #222;
+  background-color: var(--color-primary-light);
+  color: white;
 }
 
 
@@ -955,7 +955,7 @@ body.nav-open {
 }
 
 .faq-contact .btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: inline-block;
   padding: 0.8rem 1.8rem;
   background: #222;
@@ -963,6 +963,23 @@ body.nav-open {
   border-radius: 1rem;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
+}
+
+.faq-contact .button-dark {
+  margin-top: 2rem;
+}
+
+/* ========== BEGINNER SECTION SPECIFIC BUTTON HOVER STATES ========== */
+.beginner-hero .btn--white:hover {
+  background-color: var(--color-light-gray);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transform: translateX(-50%) translateY(0);
+}
+
+.faq-cta-section .button-dark:hover {
+  background-color: var(--color-light-gray);
+  color: var(--color-primary);
 }
 
 /* ========== BURSARY ========== */
@@ -1452,7 +1469,7 @@ body.nav-open {
   /* Section headings */
   .info-section .info-text h2,
   .expect__text h2,
-  .equipment__text h2,
+  .equipment-section h2,
   .faq-cta__container h2,
   .schedule__title {
     font-size: 2rem;
@@ -1460,7 +1477,7 @@ body.nav-open {
 
   /* Subsection headings */
   .expect__text h3,
-  .equipment__text h3,
+  .equipment-section h3,
   .bursary__text h3 {
     font-size: 1.3rem;
   }
@@ -1473,7 +1490,6 @@ body.nav-open {
   /* Layout adjustments - stack all two-column layouts */
   .info-section .container,
   .expect__container,
-  .equipment__container,
   .bursary__wrapper,
   .beginner-inner {
     flex-direction: column;
@@ -1483,7 +1499,6 @@ body.nav-open {
 
   .info-section .info-img,
   .expect__image,
-  .equipment__image,
   .bursary__image,
   .beginner-img {
     order: -1; /* Move images to top */
@@ -1493,15 +1508,13 @@ body.nav-open {
   /* Text content adjustments */
   .info-section .info-text,
   .expect__text,
-  .equipment__text,
   .bursary__text {
     width: 100%;
     max-width: none;
     padding: 0 1rem;
   }
 
-  .expect__text,
-  .equipment__text {
+  .expect__text {
     text-align: left;
   }
 
@@ -1515,11 +1528,16 @@ body.nav-open {
   }
 
   .btn,
-  .btn.large,
-  .btn--center {
+  .btn.large {
     font-size: 1rem;
     padding: 0.75rem 1.25rem;
     min-width: auto;
+  }
+
+  .btn--center {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    min-width: 160px;
   }
 
   /* FAQ adjustments */
@@ -1561,8 +1579,7 @@ body.nav-open {
     object-fit: cover;
   }
 
-  .beginner-img img,
-  .equipment__image img {
+  .beginner-img img {
     width: 100%;
     height: auto;
   }
@@ -1608,14 +1625,14 @@ body.nav-open {
   
   .info-section .info-text h2,
   .expect__text h2,
-  .equipment__text h2,
+  .equipment-section h2,
   .faq-cta__container h2,
   .schedule__title {
     font-size: 1.6rem;
   }
   
   .expect__text h3,
-  .equipment__text h3,
+  .equipment-section h3,
   .bursary__text h3 {
     font-size: 1.2rem;
   }
