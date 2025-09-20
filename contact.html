@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -52,7 +53,7 @@
     <div class="container contact__container">
       <h1 class="contact__title">Contact us</h1>
       <p class="contact__subtitle">
-        For any questions, comments, or concerns that you may have for us.
+        Questions about training, schedules, or joining our dojo? Send us a note—we’d be glad to hear from you.
       </p>
 
       <form action="https://formsubmit.co/clubadmin@stevestonkendo.ca" method="post" class="contact__form">
@@ -60,6 +61,7 @@
         <input type="email" name="email" placeholder="Email (required)" required />
         <input type="text" name="subject" placeholder="Subject (required)" required />
         <textarea name="message" placeholder="Message" rows="8" required></textarea>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAB2Ox1PfNpLYJTNK" data-callback="onTurnstileSuccess"></div>
         <button type="submit" class="btn__submit">Send</button>
       </form>
     </div>
