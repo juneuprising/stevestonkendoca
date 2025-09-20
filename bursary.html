@@ -1,127 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New Member Information | Steveston Kendo Club</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Member Information | Steveston Kendo Club</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
+        </a>
+        <ul class="nav__menu">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="beginner.html">Beginner Info</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+            target="_blank"
+            class="btn btn--primary"
+            >Join us</a
+          >
+          <a href="contact.html" class="btn btn--secondary">Contact</a>
+        </div>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </nav>
 
-<!-- ========== HEADER ========== -->
-<header class="header">
-  <nav class="nav container">
-    <a href="index.html" class="nav__logo">
-      <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
-    </a>
-    <ul class="nav__menu">
-      <li><a href="index.html">About Us</a></li>
-      <li><a href="beginner.html">Beginner Info</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-    <div class="nav__cta">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" target="_blank" class="btn btn--primary">Join us</a>
-      <a href="contact.html" class="btn btn--secondary">Contact</a>
-    </div>
-    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-    </button>
-  </nav>
-  
-  <!-- Mobile Menu Overlay -->
-  <div class="nav__overlay" id="nav-overlay">
-    <div class="nav__mobile-menu">
-      <ul class="nav__mobile-links">
-        <li><a href="index.html">About Us</a></li>
-        <li><a href="beginner.html">Beginner Info</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="bursary.html">Bursary</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" target="_blank">Join us</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
+      <!-- Mobile Menu Overlay -->
+      <div class="nav__overlay" id="nav-overlay">
+        <div class="nav__mobile-menu">
+          <ul class="nav__mobile-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="beginner.html">Beginner Info</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+                target="_blank"
+                >Join us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-<!-- ========== BURSARY ========== -->
-<section class="bursary section container">
-  <h2 class="bursary__title">SKC bursary</h2>
+    <!-- ========== BURSARY ========== -->
+    <section class="bursary section container">
+      <h2 class="bursary__title">SKC bursary</h2>
 
-  <div class="bursary__wrapper">
-    <div class="bursary__text">
-      <h3>About the<br><span>SKC bursary</span></h3>
-      <p>
-        Every year, the Steveston Kendo Club Bursary is given to high school graduates who have shown a commitment to both their community and the art of kendo.
-      </p>
-      <p>
-        The bursary, which is available to active club members pursuing post-secondary study, honors individuals who uphold the fundamental kendo ideals of discipline, tenacity, and respect for one another.
-      </p>
-      <p>
-        The bursary seeks to support young kendoka in maintaining their ties to the martial arts tradition while pursuing their academic and personal development.
-      </p>
-    </div>
+      <div class="bursary__wrapper">
+        <div class="bursary__text">
+          <h3>About the<br /><span>SKC bursary</span></h3>
+          <p>
+            Every year, the Steveston Kendo Club Bursary is given to high school
+            graduates who have shown a commitment to both their community and
+            the art of kendo.
+          </p>
+          <p>
+            The bursary, which is available to active club members pursuing
+            post-secondary study, honors individuals who uphold the fundamental
+            kendo ideals of discipline, tenacity, and respect for one another.
+          </p>
+          <p>
+            The bursary seeks to support young kendoka in maintaining their ties
+            to the martial arts tradition while pursuing their academic and
+            personal development.
+          </p>
+        </div>
 
-    <div class="bursary__image">
-      <img src="assets/img/Bursary.JPG" alt="Kendo students gathering">
-    </div>
-  </div>
-</section>
+        <div class="bursary__image">
+          <img src="assets/img/Bursary.JPG" alt="Kendo students gathering" />
+        </div>
+      </div>
+    </section>
 
-<!-- ========== BURSARY REQUIREMENTS ========== -->
-<section class="bursary__requirements section">
-  <h2 class="section__title">Requirements</h2>
+    <!-- ========== BURSARY REQUIREMENTS ========== -->
+    <section class="bursary__requirements section">
+      <h2 class="section__title">Requirements</h2>
 
-  <div class="requirements__grid container">
-    <div class="requirement__item">Be a Steveston Kendo Club Member for at least 2 years</div>
-    <div class="requirement__item">Proof of high school Transcript</div>
-    <div class="requirement__item">Proof of Post Secondary Enrollment</div>
-    <div class="requirement__item">Have the Discretion of the Sensei Cadre</div>
-  </div>
+      <div class="requirements__grid container">
+        <div class="requirement__item">
+          Be a Steveston Kendo Club Member for at least 2 years
+        </div>
+        <div class="requirement__item">Proof of high school Transcript</div>
+        <div class="requirement__item">Proof of Post Secondary Enrollment</div>
+        <div class="requirement__item">
+          Have the Discretion of the Sensei Cadre
+        </div>
+      </div>
 
-  <!-- Request Bursary button -->
-  <!--<div class="requirements__cta">
+      <!-- Request Bursary button -->
+      <!--<div class="requirements__cta">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScPM93Ny8cYJv_0sNPz2dVvQXMlGGmcQi6395-Ltz_Lm5mM4A/viewform?pli=1" class="btn__cta">Request bursary</a>
   </div>-->
-</section>
+    </section>
 
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beginner.html">Beginner Info</a></li>
+            <li>
+              <a href="https://calendar.google.com/calendar/" target="_blank"
+                >Calendar</a
+              >
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="members.html">Members Page</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/stevestonkendoclub/"
+                target="_blank"
+                ><i data-feather="instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/stevestonkendo.club.1/"
+                target="_blank"
+                ><i data-feather="facebook"></i> Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="footer__bottom">
+        <p>© Steveston Kendo Club. All rights reserved.</p>
+      </div>
+    </footer>
 
-
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container footer__content">
-    <div class="footer__links">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="beginner.html">Beginner Info</a></li>
-        <li><a href="https://calendar.google.com/calendar/" target="_blank">Calendar</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-      <ul>
-        <li><a href="history.html">History</a></li>
-        <li><a href="members.html">Members Page</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="bursary.html">Bursary</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://www.instagram.com/stevestonkendoclub/" target="_blank"><i data-feather="instagram"></i> Instagram</a></li>
-        <li><a href="https://www.facebook.com/stevestonkendo.club.1/" target="_blank"><i data-feather="facebook"></i> Facebook</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer__bottom">
-    <p>© Steveston Kendo Club. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-<script>
-  feather.replace();
-</script>
-</body>
+    <script src="assets/js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>

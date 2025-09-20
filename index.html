@@ -1,178 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"></noscript>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="https://unpkg.com/feather-icons"></script>
-  <title>Steveston Kendo Club</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+    /></noscript>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Steveston Kendo Club</title>
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
+        </a>
+        <ul class="nav__menu">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="beginner.html">Beginner Info</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+            target="_blank"
+            class="btn btn--primary"
+            >Join us</a
+          >
+          <a href="contact.html" class="btn btn--secondary">Contact</a>
+        </div>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </nav>
 
-<!-- ========== HEADER ========== -->
-<header class="header">
-  <nav class="nav container">
-    <a href="index.html" class="nav__logo">
-      <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
-    </a>
-    <ul class="nav__menu">
-      <li><a href="index.html">About Us</a></li>
-      <li><a href="beginner.html">Beginner Info</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-    <div class="nav__cta">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" target="_blank" class="btn btn--primary">Join us</a>
-      <a href="contact.html" class="btn btn--secondary">Contact</a>
-    </div>
-    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-      <span class="hamburger"></span>
-    </button>
-  </nav>
-  
-  <!-- Mobile Menu Overlay -->
-  <div class="nav__overlay" id="nav-overlay">
-    <div class="nav__mobile-menu">
-      <ul class="nav__mobile-links">
-        <li><a href="index.html">About Us</a></li>
-        <li><a href="beginner.html">Beginner Info</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="bursary.html">Bursary</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" target="_blank">Join us</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
-
-<!-- ========== HERO SECTION ========== -->
-<section class="hero">
-  <div class="container hero__inner">
-    <h1 class="hero__title">Teaching excellency<br>through kendo</h1>
-    <div class="hero__buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" target="_blank" class="btn btn--primary">Join us</a>
-      <a href="beginner.html" class="btn btn--secondary">Learn more</a>
-    </div>
-  </div>
-</section>
-
-<section class="hero-image">
-  <img src="assets/img/Home 1.JPG" alt="Kendo Practice Hall" />
-</section>
-
-<!-- ========== CLUB INTRODUCTION ========== -->
-<section class="info-section light">
-  <div class="container">
-  <div class="info-text">
-    <h2>A kendo club rooted in history</h2>
-    <p>
-      Founded in 1914, the Steveston Kendo Club is one of the oldest kendo clubs in Canada. Originally founded under the name Yokikan, it closed its doors in 1939 during World War II. After the war, Steveston Kendo Club reopened its doors and is now home to over 60 active members. The Club is located in the heart of Steveston, at the iconic Steveston Martial Arts Centre. 
-    </p>
-  </div>
-  <div class="info-img">
-    <img src="assets/img/Home 2.png" alt="Historical group photo" />
-  </div>
-  </div>
-</section>
-
-<section class="info-section dark">
-  <div class="container">
-  <div class="info-img">
-    <img src="assets/img/Home 3.jpg" alt="Community photo" />
-  </div>
-  <div class="info-text white">
-    <h2>Kendo for all<br> walks of life</h2>
-    <p>
-      The Steveston Kendo Club hosts kendo practices to members ages 8 and over. Members come from all over the lower mainland in BC, from a diverse range of fitness levels, cultures, and learning goals.
-    </p>
-  </div>
-  </div>
-</section>
-
-<!-- ========== PRACTICE SCHEDULE ========== -->
-<section class="schedule">
-  <h2 class="schedule__title">Practice schedule</h2>
-  <div class="schedule__days">
-    <div class="schedule__day">
-      <div class="schedule__day-title">Monday</div>
-      <div class="schedule__time">7:30–9pm</div>
-      <div class="schedule__location">Steveston Martial<br>Arts Center</div>
-    </div>
-    <div class="schedule__day">
-      <div class="schedule__day-title">Wednesday</div>
-      <div class="schedule__time">7:30–9pm</div>
-      <div class="schedule__location">Steveston Martial<br>Arts Center</div>
-    </div>
-    <div class="schedule__day">
-      <div class="schedule__day-title">Friday</div>
-      <div class="schedule__time">7:30–9pm</div>
-      <div class="schedule__location">Steveston Martial<br>Arts Center</div>
-    </div>
-  </div>
-  <p class="schedule__note">
-    This schedule is for bogu members only.<br />
-    Schedule is subject to change
-  </p>
-</section>
-
-<!-- ========== BEGINNER INFO ========== -->
-<section class="beginner-section dark">
-  <div class="container beginner-inner">
-    <div class="beginner-text">
-      <h2>Beginners course</h2>
-      <p>
-        The summer introductory kendo course is designed to welcome beginners and build a solid foundation in both the physical and philosophical aspects of the art as well as to provide a short term experience to see if kendo is right for them. 
-      </p>
-      <div class="hero__buttons">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform" target="_blank" class="btn btn--primary-inverse">Join us</a>
-          <a href="beginner.html" class="btn btn--secondary-inverse">Learn more</a>
+      <!-- Mobile Menu Overlay -->
+      <div class="nav__overlay" id="nav-overlay">
+        <div class="nav__mobile-menu">
+          <ul class="nav__mobile-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="beginner.html">Beginner Info</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+                target="_blank"
+                >Join us</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="beginner-img">
-      <img src="assets/img/Home 4.jpg" alt="Beginner class practice">
-    </div>
-  </div>
-</section>
+    </header>
 
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Teaching excellency<br />through kendo</h1>
+        <div class="hero__buttons">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+            target="_blank"
+            class="btn btn--primary"
+            >Join us</a
+          >
+          <a href="beginner.html" class="btn btn--secondary">Learn more</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="hero-image">
+      <img src="assets/img/Home 1.JPG" alt="Kendo Practice Hall" />
+    </section>
 
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container footer__content">
-    <div class="footer__links">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="beginner.html">Beginner Info</a></li>
-        <li><a href="https://calendar.google.com/calendar/" target="_blank">Calendar</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-      <ul>
-        <li><a href="history.html">History</a></li>
-        <li><a href="members.html">Members</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="bursary.html">Bursary</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://www.instagram.com/stevestonkendoclub/" target="_blank"><i data-feather="instagram"></i> Instagram</a></li>
-        <li><a href="https://www.facebook.com/stevestonkendo.club.1/" target="_blank"><i data-feather="facebook"></i> Facebook</a></li>
-      </ul>
-    </div>
-  </div>
+    <!-- ========== CLUB INTRODUCTION ========== -->
+    <section class="info-section light">
+      <div class="container">
+        <div class="info-text">
+          <h2>A kendo club rooted in history</h2>
+          <p>
+            Founded in 1914, the Steveston Kendo Club is one of the oldest kendo
+            clubs in Canada. Originally founded under the name Yokikan, it
+            closed its doors in 1939 during World War II. After the war,
+            Steveston Kendo Club reopened its doors and is now home to over 60
+            active members. The Club is located in the heart of Steveston, at
+            the iconic Steveston Martial Arts Centre.
+          </p>
+        </div>
+        <div class="info-img">
+          <img src="assets/img/Home 2.png" alt="Historical group photo" />
+        </div>
+      </div>
+    </section>
 
-  <div class="footer__bottom">
-    <p>© Steveston Kendo Club. All rights reserved.</p>
-  </div>
-</footer>
+    <section class="info-section dark">
+      <div class="container">
+        <div class="info-img">
+          <img src="assets/img/Home 3.jpg" alt="Community photo" />
+        </div>
+        <div class="info-text white">
+          <h2>
+            Kendo for all<br />
+            walks of life
+          </h2>
+          <p>
+            The Steveston Kendo Club hosts kendo practices to members ages 8 and
+            over. Members come from all over the lower mainland in BC, from a
+            diverse range of fitness levels, cultures, and learning goals.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- ========== PRACTICE SCHEDULE ========== -->
+    <section class="schedule">
+      <h2 class="schedule__title">Practice schedule</h2>
+      <div class="schedule__days">
+        <div class="schedule__day">
+          <div class="schedule__day-title">Monday</div>
+          <div class="schedule__time">7:30–9pm</div>
+          <div class="schedule__location">
+            Steveston Martial<br />Arts Center
+          </div>
+        </div>
+        <div class="schedule__day">
+          <div class="schedule__day-title">Wednesday</div>
+          <div class="schedule__time">7:30–9pm</div>
+          <div class="schedule__location">
+            Steveston Martial<br />Arts Center
+          </div>
+        </div>
+        <div class="schedule__day">
+          <div class="schedule__day-title">Friday</div>
+          <div class="schedule__time">7:30–9pm</div>
+          <div class="schedule__location">
+            Steveston Martial<br />Arts Center
+          </div>
+        </div>
+      </div>
+      <p class="schedule__note">
+        This schedule is for bogu members only.<br />
+        Schedule is subject to change
+      </p>
+    </section>
 
-<script src="assets/js/main.js"></script>
-<script>
-  feather.replace();
-</script>
-</body>
+    <!-- ========== BEGINNER INFO ========== -->
+    <section class="beginner-section dark">
+      <div class="container beginner-inner">
+        <div class="beginner-text">
+          <h2>Beginners course</h2>
+          <p>
+            The summer introductory kendo course is designed to welcome
+            beginners and build a solid foundation in both the physical and
+            philosophical aspects of the art as well as to provide a short term
+            experience to see if kendo is right for them.
+          </p>
+          <div class="hero__buttons">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+              target="_blank"
+              class="btn btn--primary-inverse"
+              >Join us</a
+            >
+            <a href="beginner.html" class="btn btn--secondary-inverse"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="beginner-img">
+          <img src="assets/img/Home 4.jpg" alt="Beginner class practice" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beginner.html">Beginner Info</a></li>
+            <li>
+              <a href="https://calendar.google.com/calendar/" target="_blank"
+                >Calendar</a
+              >
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/stevestonkendoclub/"
+                target="_blank"
+                ><i data-feather="instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/stevestonkendo.club.1/"
+                target="_blank"
+                ><i data-feather="facebook"></i> Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© Steveston Kendo Club. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
