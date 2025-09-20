@@ -1124,6 +1124,15 @@ body.nav-open {
   gap: 1.25rem;
 }
 
+/* Contact form submit button: match primary button shape and constrain width */
+.contact__form .btn.btn--primary {
+  align-self: center;
+  width: 100%;
+  max-width: 260px;
+  border-radius: var(--radius-xl);
+  padding: 0.8rem 2rem;
+}
+
 .contact__form input,
 .contact__form textarea {
   width: 100%;
