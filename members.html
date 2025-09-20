@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Member Information | Steveston Kendo Club</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
+        </a>
+        <ul class="nav__menu">
+          <li><a href="index.html">About us</a></li>
+          <li><a href="beginner.html">Beginner info</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+            target="_blank"
+            class="btn btn--primary"
+            >Join us</a
+          >
+          <a href="contact.html" class="btn btn--secondary">Contact</a>
+        </div>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="nav__overlay" id="nav-overlay">
+        <div class="nav__mobile-menu">
+          <ul class="nav__mobile-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="beginner.html">Beginner Info</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+                target="_blank"
+                >Join us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== SENSEIS ========== -->
+    <section class="members-carousel">
+      <div class="container">
+        <h2 class="our-Members-title">Our senseis</h2>
+      </div>
+      <div class="carousel"></div>
+      <div class="container">
+        <div class="member-info" id="member-info"></div>
+      </div>
+    </section>
+
+    <script src="assets/js/members-carousel.js"></script>
+
+    <!-- ========== MEMBERS ========== -->
+    <div class="container">
+      <h2 class="our-Members-title">Our members</h2>
+    </div>
+    <section class="dan-groups">
+      <div class="dan-row top-row">
+        <div class="dan-card">
+          <div class="dan-title">3 Dan</div>
+          <div class="dan-names">
+            <div>R. Murao</div>
+            <div>W. Wong</div>
+            <div>L. Murao</div>
+            <div>D. Yao</div>
+            <div>P. Lee</div>
+            <div>E. Chui</div>
+          </div>
+        </div>
+
+        <div class="dan-card">
+          <div class="dan-title">2 Dan</div>
+          <div class="dan-names">
+            <div>T. Chui</div>
+            <div>I. Tang</div>
+            <div>C. Robillard</div>
+            <div>J. Chen</div>
+            <div>R. Nakano</div>
+            <div>J. Higo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dan-row">
+        <div class="dan-card-row">
+          <div class="dan-title">1 Dan</div>
+          <div class="dan-names-row">
+            <div>B. Miki</div>
+            <div>L. Wang</div>
+            <div>W. Chiu</div>
+            <div>K.B. Lee</div>
+            <div>E. Nakano</div>
+            <div>T. Kwong</div>
+            <div>L. Takahae</div>
+            <div>E. Hung</div>
+            <div>L. Tong</div>
+            <div>S. O'Sullivan</div>
+            <div>D. Chui</div>
+            <div>T. Kwong</div>
+            <div>A. Iwai</div>
+            <div>Em. Chui</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beginner.html">Beginner info</a></li>
+            <li>
+              <a href="https://calendar.google.com/calendar/" target="_blank"
+                >Calendar</a
+              >
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="members.html">Members page</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/stevestonkendoclub/"
+                target="_blank"
+                ><i data-feather="instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/stevestonkendo.club.1/"
+                target="_blank"
+                ><i data-feather="facebook"></i> Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© Steveston Kendo Club. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

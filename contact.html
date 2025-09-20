@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Member Information | Steveston Kendo Club</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Steveston Kendo Club Logo" />
+        </a>
+        <ul class="nav__menu">
+          <li><a href="index.html">About us</a></li>
+          <li><a href="beginner.html">Beginner info</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+            target="_blank"
+            class="btn btn--primary"
+            >Join us</a
+          >
+          <a href="contact.html" class="btn btn--secondary">Contact</a>
+        </div>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="nav__overlay" id="nav-overlay">
+        <div class="nav__mobile-menu">
+          <ul class="nav__mobile-links">
+            <li><a href="index.html">About us</a></li>
+            <li><a href="beginner.html">Beginner info</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfKZwhmdMIK4qbdK0a5IQTP1EngkHobL4nZbZnUn5HIH-4Mmw/closedform"
+                target="_blank"
+                >Join us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section">
+      <div class="container contact__container">
+        <h1 class="contact__title">Contact us</h1>
+        <p class="contact__subtitle">
+          Questions about training, schedules, or joining our dojo? Send us a
+          note—we’d be glad to hear from you.
+        </p>
+
+        <form
+          action="https://formsubmit.co/clubadmin@stevestonkendo.ca"
+          method="post"
+          class="contact__form"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Name (required)"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email (required)"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject (required)"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            rows="8"
+            required
+          ></textarea>
+          <div
+            class="cf-turnstile"
+            data-sitekey="0x4AAAAAAB2Ox1PfNpLYJTNK"
+            data-callback="onTurnstileSuccess"
+          ></div>
+          <button type="submit" class="btn__submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beginner.html">Beginner info</a></li>
+            <li>
+              <a href="https://calendar.google.com/calendar/" target="_blank"
+                >Calendar</a
+              >
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="members.html">Members page</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="bursary.html">Bursary</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/stevestonkendoclub/"
+                target="_blank"
+                ><i data-feather="instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/stevestonkendo.club.1/"
+                target="_blank"
+                ><i data-feather="facebook"></i> Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© Steveston Kendo Club. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
